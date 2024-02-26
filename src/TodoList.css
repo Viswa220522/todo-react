@@ -1,0 +1,12 @@
+/* TodoList.css */
+.task-item {
+    padding: 10px;
+    border-bottom: 1px solid #dee2e6;
+  }
+  
+ /* TodoList.css */
+.task-item.completed {
+    text-decoration: line-through !important;
+  }
+  
+  

@@ -1,0 +1,52 @@
+/* styles.css */
+
+/* Light Theme */
+.light-theme {
+    --background-color: #f0f0f0; /* Light gray */
+    --text-color: #333; /* Dark gray */
+    --primary-color: #007bff; /* Blue */
+    --danger-color: #dc3545; /* Red */
+    --success-color: #28a745; /* Green */
+  }
+  
+  /* Dark Theme */
+  .dark-theme {
+    --background-color: #333; /* Dark gray */
+    --text-color: #f0f0f0; /* Light gray */
+    --primary-color: #007bff; /* Blue */
+    --danger-color: #dc3545; /* Red */
+    --success-color: #28a745; /* Green */
+  }
+  
+  /* General styles */
+  body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .form-check-input:checked {
+    background-color: var(--primary-color); /* Change checkbox background color when checked */
+  }
+  
+  .form-check-input:checked + .form-check-label::before {
+    background-color: var(--primary-color); /* Change checkbox border color when checked */
+  }
+  
+  .task-item {
+    padding: 10px;
+    border-bottom: 1px solid #dee2e6;
+  }
+  
+  .task-item.completed {
+    text-decoration: line-through;
+  }
+  
+  .edit-icon {
+    color: var(--primary-color);
+  }
+  
+  .delete-icon {
+    color: var(--danger-color);
+  }
+  
